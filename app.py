@@ -1,4 +1,9 @@
 import html
+import os
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+os.chdir(PROJECT_ROOT)
 
 import streamlit as st
 

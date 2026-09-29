@@ -4,7 +4,8 @@ from pathlib import Path
 from pypdf import PdfReader
 
 
-JOB_DESCRIPTION_DIR = Path("data/job_description")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+JOB_DESCRIPTION_DIR = PROJECT_ROOT / "data" / "job_description"
 
 SECTION_HEADERS = {
     "JOB TITLE",
